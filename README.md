@@ -6,6 +6,14 @@
 
 Docker repository at https://hub.docker.com/r/evpavel/kt/
 
+Image size: 4 MB compressed, 11 MB uncompressed
+
+### Usage
+
+```
+docker run evpavel/kt kt topic -brokers my-kafka-server:9092
+```
+
 ### How it works
 
 1. Build image from `Dockerfile.compile`
