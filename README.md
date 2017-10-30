@@ -11,17 +11,16 @@ Image size: 4 MB compressed, 11 MB uncompressed
 ### Usage
 
 ```
-docker run evpavel/kt kt topic -brokers my-kafka-server:9092
+docker run evpavel/kt topic -brokers my-kafka-server:9092
 ```
 
 ### How it works
 
-1. Build image from `Dockerfile.compile`
-2. Copy compiled `kt` binary
-3. Build small image with only `kt` binary
+1. Build image from `Dockerfile` using [multi-stage builds](https://docs.docker.com/engine/userguide/eng-image/multistage-build/)
+2. Build small image with only `kt` binary
 
 ### Build
 
 ```
-./build_all.sh
+./build.sh
 ```
