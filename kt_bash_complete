@@ -17,7 +17,7 @@ _kt()
             return 0
             ;;
         produce)
-            COMPREPLY=( $(compgen -W ''"${common_opts}"' -batch -buffersize -decodekey -decodevalue -literal -partition -partitioner -pretty -timeout -topic ' -- ${cur}) )
+            COMPREPLY=( $(compgen -W ''"${common_opts}"' -batch -buffersize -decodekey -decodevalue -literal -partition -partitioner -pretty -timeout -topic -compression' -- ${cur}) )
             return 0
             ;;
         topic)
