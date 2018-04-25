@@ -6,7 +6,7 @@
 
 Docker repository at https://hub.docker.com/r/evpavel/kt/
 
-Image size: 4 MB compressed, 20 MB uncompressed
+Image size: 7 MB compressed, 20 MB uncompressed
 
 ### Usage
 
