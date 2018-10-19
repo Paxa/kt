@@ -14,9 +14,15 @@ Image size: 7 MB compressed, 20 MB uncompressed
 docker run evpavel/kt kt topic -brokers my-kafka-server:9092
 ```
 
+With bash autocomplete:
+```
+docker run -it evpavel/kt bash
+d403caf43e88:/# kt <tab><tab>
+```
+
 ### Features
 
-* come with bash, jq and jsonify
+* come with bash, jq and jsonify, curl, telnet, nano
 * bash completion
 
 ### Build
