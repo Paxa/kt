@@ -1,11 +1,11 @@
-FROM golang:1.11-alpine3.8 as builder
+FROM golang:1.19-alpine3.16 as builder
 RUN apk add git --no-cache
 
-RUN go get -u github.com/fgeller/kt
-RUN go get -u github.com/fgeller/jsonify
+RUN go install github.com/fgeller/kt@latest
+RUN go install github.com/fgeller/jsonify@latest
 
 
-FROM alpine:3.8
+FROM alpine:3.16
 MAINTAINER Pavel Evstigneev <pavel.evst@gmail.com>
 
 RUN apk add bash jq curl busybox-extras nano --no-cache && \
